@@ -1,10 +1,11 @@
-import React from 'react'
-import { title } from './style'
+import Logo from '@components/logo/index'
+import { container, title } from './styles'
 
-export default function index() {
-  return (
-    <div>
-      <h1 css={title}>this is header component changed</h1>
-    </div>
-  )
-}
+const Header = () => (
+  <header css={container}>
+    <Logo />
+    <h1 css={title}>devlog</h1>
+  </header>
+)
+
+export default Header
